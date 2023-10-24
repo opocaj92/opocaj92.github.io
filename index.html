@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jacopo Castellini</title>
+        <meta name="description" content="Jacopo Castellini personal page for the University of Liverpool.">
+        <link rel="stylesheet" href="style.css">
+        <script src="toggler.js"></script>
+    </head>
+    <body class="theme-default">
+        <div class="wrapper" itemscope="" itemtype="http://schema.org/Person">
+            <header class="page-header">
+                <img src="avatar.jpg" alt="my photo" class="avatar" itemprop="image"/>
+                <h1 class="header-name" itemprop="name">Jacopo Castellini</h1>
+                <div class="title-bar">
+                    <h2 class="header-title" itemprop="jobTitle">Postdoc Researcher @ INSA Lyon</h2>
+                </div>
+                <br>
+                <div class="executive-summary" itemprop="description">
+                    <p>I am a Postdoc Researcher at the <a href="https://www.insa-lyon.fr/" class="my-link">INSA Lyon</a>, working under the supervision of <a href="http://dibangoye.fr/" class="my-link">Prof. Jilles Steeve Dibangoye</a>. I am interested in the field of AI, expecially machine learning and deep learning. My current work is on optimally solving partially observable problems. Other research interests are related to neural networks, reinforcement learning, planning and multi-agent systems.</p>
+                </div>
+            </header>
+            <nav>
+                <div class="section-header" onclick="toggleSection('education-container')">
+                    <h2>Education</h2>
+                </div>
+                <div class="section-header" onclick="toggleSection('publications-container')">
+                    <h2>Publications</h2>
+                </div>
+                <div class="section-header" onclick="toggleSection('teaching-container')">
+                    <h2>Teaching</h2>
+                </div>
+                <div class="section-header" onclick="toggleSection('contacts-container')">
+                    <h2>Contacts</h2>
+                </div>
+            </nav>
+            <section class="content-section">
+                <div id="education-container">
+                    <div class="resume-item" itemscope="" itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+                        <h3 class="resume-item-title" itemprop="name">Institut National des Sciences Appliquées de Lyon</h3>
+                        <h4 class="resume-item-details" itemprop="description">Postdoc Researcher • 2023 — present</h4>
+                        <p class="resume-item-copy" itemprop="info">Topic: Optimal solution of partially observable multi-agent systems
+                            <br>Advisor: <a href="http://dibangoye.fr/" class="my-link">Prof. Jilles Steeve Dibangoye</a>
+                        </p>
+                    </div>
+                    <div class="resume-item" itemscope="" itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+                        <h3 class="resume-item-title" itemprop="name">University of East Anglia - Norwich Business School</h3>
+                        <h4 class="resume-item-details" itemprop="description">Senior Research Associate • 2022 — 2023</h4>
+                        <p class="resume-item-copy" itemprop="info">Topic: Recommender systems and suppliers competition in digital markets
+                            <br>Advisors: <a href="https://research-portal.uea.ac.uk/en/persons/peter-ormosi" class="my-link">Prof. Peter Ormosi</a>, <a href="https://research-portal.uea.ac.uk/en/persons/amelia-fletcher" class="my-link">Prof. Amelia Fletcher</a> <a href="https://cgi.csc.liv.ac.uk/~rahul/" class="my-link">Prof. Rahul Savani</a>
+                        </p>
+                    </div>
+                    <div class="resume-item" itemscope="" itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+                        <h3 class="resume-item-title" itemprop="name">University of Liverpool - Department of Computer Science</h3>
+                        <h4 class="resume-item-details" itemprop="description">Doctor of Philosophy - Ph.D. • 2017 — 2022</h4>
+                        <p class="resume-item-copy" itemprop="info">Topic: Deep learning for multi-agent reinforcement learning and decision making
+                            <br>Supervisors: <a href="https://www.fransoliehoek.net/wp/" class="my-link">Dr. Frans Oliehoek</a>, <a href="https://cgi.csc.liv.ac.uk/~rahul/" class="my-link">Prof. Rahul Savani</a>
+                            <br>Passed under minor revisions
+                        </p>
+                    </div>
+                    <div class="resume-item" itemscope="" itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+                        <h3 class="resume-item-title" itemprop="name">University of Perugia - Department of Mathematics and Computer Science</h3>
+                        <h4 class="resume-item-details" itemprop="description">Master's Degree, Computer Science • 2014 — 2017</h4>
+                        <p class="resume-item-copy" itemprop="info">Thesis: Learning numeracy - binary arithmetic with Neural Turing Machines
+                            <br>Supervisors: <a href="http://www.dmi.unipg.it/poggioni/" class="my-link">Dr. Valentina Poggioni</a>, <a href="http://www.dmi.unipg.it/~baioletti/" class="my-link">Dr. Marco Baioletti</a>
+                            <br>Final mark: 110/110 with honors
+                        </p>
+                    </div>
+                    <div class="resume-item" itemscope="" itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+                        <h3 class="resume-item-title" itemprop="name">University of Perugia - Department of Mathematics and Computer Science</h3>
+                        <h4 class="resume-item-details" itemprop="description">Bachelor's Degree, Computer Science • 2011 — 2014</h4>
+                        <p class="resume-item-copy" itemprop="info">Thesis: Krylov iterative methods for the geometric mean of two matrices times a vector
+                            <br>Supervisor: <a href="http://poisson.phc.dm.unipi.it/%7emaxreen/bruno/" class="my-link">Dr. Bruno Iannazzo</a>
+                            <br>Final mark: 110/110 with honors
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="content-section">
+                <div id="publications-container">
+                    <div class="resume-item">
+                        <h3 class="resume-item-title" itemprop="publicationTitle">Recommender Systems and Competition on Subscription-Based Platforms</h3>
+                        <h4 class="resume-item-details" itemprop="info">Co-author with <a href="https://research-portal.uea.ac.uk/en/persons/amelia-fletcher" class="my-link">Amelia Fletcher</a>, <a href="https://research-portal.uea.ac.uk/en/persons/peter-ormosi" class="my-link">Peter L. Ormosi</a> and <a href="https://cgi.csc.liv.ac.uk/~rahul/" class="my-link">Rahul Savani</a></h4>
+                        <p class="resume-item-copy" itemprop="versions">• SSRN Working Paper No. 4428125, 50 pages, 27 April 2023 <a href="https://deliverypdf.ssrn.com/delivery.php?ID=775083081114002116015079092081013125015041073000033030103118085071025093023086081099019058097123006014049009004027127107001095019050035019082067097098103068019116084015076004018115105071091111121083087113016101121012006088108019009091090004009017027&EXT=pdf&INDEX=TRUE" class="my-link">[pdf]</a> <a href="bibs/castellini2023rs2.bib" class="my-link" download>[.bib]</a></p>
+                        <p class="resume-item-copy" itemprop="abstract">Subscription-based platforms offer consumers access to a large selection of content at a fixed subscription fee. Recommender systems can help consumers by reducing the size of this choice set by predicting consumers' preferences. However, their prediction is based on limited information on the consumers and sometimes even on the content, which means that the recommendations are often biased. In this paper we introduce a simple theoretical framework for platforms selling to consumers with a quasi-linear utility function via a recommender system. We simulate a set of different recommender systems and use them in this framework to test our hypothesis that RS biases lead to more concentrated markets, increased entry barriers, and increased homogeneity in the recommendations even where the platform is inherently customer-centric and not self-preferencing. Although encouraging more exploration can reduce these market consolidating effects, they can reduce recommendation relevance in the short-run.</p>
+                    </div>
+                    <div class="resume-item">
+                        <h3 class="resume-item-title" itemprop="publicationTitle">Biased Recommender Systems And Supplier Competition</h3>
+                        <h4 class="resume-item-details" itemprop="info">Co-author with <a href="https://research-portal.uea.ac.uk/en/persons/amelia-fletcher" class="my-link">Amelia Fletcher</a>, <a href="https://research-portal.uea.ac.uk/en/persons/peter-ormosi" class="my-link">Peter L. Ormosi</a> and <a href="https://cgi.csc.liv.ac.uk/~rahul/" class="my-link">Rahul Savani</a></h4>
+                        <p class="resume-item-copy" itemprop="versions">• SSRN Working Paper No. 4319311, 35 pages, 06 January 2023 <a href="https://deliverypdf.ssrn.com/delivery.php?ID=997085004006090121126126095101107125026064002040052074078088066090102088026102100092121022038118114014116086116088085003027023028020004053048015029112066085022095103002028001115090013008114024090122007127001094126064127104030065086120024095068127088116&EXT=pdf&INDEX=TRUE" class="my-link">[pdf]</a> <a href="bibs/castellini2023rs1.bib" class="my-link" download>[.bib]</a></p>
+                        <p class="resume-item-copy" itemprop="abstract">Recommender systems are prevalent across digital platforms. They use machine learning techniques to help consumers make choices by predicting their preferred items. If RS had perfect information about consumer preferences and item attributes, they could recommend the most suitable item for each consumer. However, in practice, recommender systems have incomplete information, and their prediction models can exhibit systemic biases. Our stylised model shows such biases can dampen competition between the suppliers selling through digital platform, arising from the fact that biased recommendations are less closely linked to true preferences. Three specific types of bias are examined and are shown to have subtly different effects. Competition remains stronger where suppliers can compete to gain the benefit of the bias, a form of competition for the market. The worst market outcomes can be avoided if consumers can reject unsuitable recommendations, since this helps to restore the competitive constraint on suppliers. However, a model extension shows that these results no longer necessarily hold with endogenous vertical quality. Importantly, in choosing its recommender system, the platform’s preferences are not typically aligned with those of consumers.</p>
+                    </div>
+                    <div class="resume-item">
+                        <h3 class="resume-item-title" itemprop="publicationTitle">Difference Rewards Policy Gradients</h3>
+                        <h4 class="resume-item-details" itemprop="info">Main author with <a href="https://www.microsoft.com/en-us/research/people/sadevlin/" class="my-link">Sam Devlin</a>, <a href="https://www.fransoliehoek.net/wp/" class="my-link">Frans A. Oliehoek</a> and <a href="https://cgi.csc.liv.ac.uk/~rahul/" class="my-link">Rahul Savani</a></h4>
+                        <p class="resume-item-copy" itemprop="versions">• Neural Computing and Applications (S.I. on Adaptive and Learning Agents 2021), 24 pages, Springer Nature, 11 November 2022 <a href="https://link.springer.com/content/pdf/10.1007/s00521-022-07960-5.pdf" class="my-link">[pdf]</a> <a href="bibs/castellini2022drpg.bib" class="my-link" download>[.bib]</a><br/>
+                        • Extended Abstract in Proceedings of the 20th International Conference on Autonomous Agents and Multiagent Systems AAMAS'21, 1475-1477, IFAAMAS, 2021 <a href="http://www.ifaamas.org/Proceedings/aamas2021/pdfs/p1475.pdf" class="my-link">[pdf]</a> <a href="bibs/castellini2021drpg_ea.bib" class="my-link" download>[.bib]</a><br/>
+                        • Best Paper Award at ALA'21, 03-04 May 2021 <a href="https://ala2021.vub.ac.be/papers/ALA2021_paper_9.pdf" class="my-link">[pdf]</a> <a href="https://www.youtube.com/watch?v=VrRw0AHCxT8" class="my-link">[video]</a> <a href="https://ala2021.vub.ac.be/presentations/pres_paper9.pdf" class="my-link">[slides]</a></p>
+                        <p class="resume-item-copy" itemprop="abstract">Policy gradient methods have become one of the most popular classes of algorithms for multi-agent reinforcement learning. A key challenge, however, that is not addressed by many of these methods is multi-agent credit assignment: assessing an agent’s contribution to the overall performance, which is crucial for learning good policies. We propose a novel algorithm called Dr.Reinforce that explicitly tackles this by combining difference rewards with policy gradients to allow for learning decentralized policies when the reward function is known. By differencing the reward function directly, Dr.Reinforce avoids difficulties associated with learning the Q-function as done by counterfactual multi-agent policy gradients (COMA), a state-of-the-art difference rewards method. For applications where the reward function is unknown, we show the effectiveness of a version of Dr.Reinforce that learns an additional reward network that is used to estimate the difference rewards.</p>
+                    </div>
+                    <div class="resume-item">
+                        <h3 class="resume-item-title" itemprop="publicationTitle">Analysing factorizations of action-value networks for cooperative multi-Agent reinforcement learning</h3>
+                        <h4 class="resume-item-details" itemprop="info">Main author with <a href="https://www.fransoliehoek.net/wp/" class="my-link">Frans A. Oliehoek</a>, <a href="https://cgi.csc.liv.ac.uk/~rahul/" class="my-link">Rahul Savani</a> and <a href="https://www.cs.ox.ac.uk/people/shimon.whiteson/" class="my-link">Shimon Whiteson</a></h4>
+                        <p class="resume-item-copy" itemprop="versions">• Autonomous Agents and Multi-Agent Systems 35(25), 53 pages, Springer Nature, 07 June 2021 <a href="https://link.springer.com/content/pdf/10.1007/s10458-021-09506-w.pdf" class="my-link">[pdf]</a> <a href="bibs/castellini2021factored.bib" class="my-link" download>[.bib]</a><br/>
+                        • Extended Abstract in Proceedings of the 18th International Conference on Autonomous Agents and Multiagent Systems AAMAS'19, 1862-1864, IFAAMAS, 2019 <a href="http://www.ifaamas.org/Proceedings/aamas2019/pdfs/p1862.pdf" class="my-link">[pdf]</a> <a href="bibs/castellini2019factored_ea.bib" class="my-link" download>[.bib]</a></p>
+                        <p class="resume-item-copy" itemprop="abstract">Recent years have seen the application of deep reinforcement learning techniques to cooperative multi-agent systems, with great empirical success. However, given the lack of theoretical insight, it remains unclear what the employed neural networks are learning, or how we should enhance their learning power to address the problems on which they fail. In this work, we empirically investigate the learning power of various network architectures on a series of one-shot games. Despite their simplicity, these games capture many of the crucial problems that arise in the multi-agent setting, such as an exponential number of joint actions or the lack of an explicit coordination mechanism. Our results extend those in Castellini et al. (Proceedings of the 18th International Conference on Autonomous Agents and MultiAgent Systems, AAMAS’19.International Foundation for Autonomous Agents and Multiagent Systems, pp 1862–1864, 2019) and quantify how well various approaches can represent the requisite value functions, and help us identify the reasons that can impede good performance, like sparsity of the values or too tight coordination requirements.</p>
+                    </div>
+                    <div class="resume-item">
+                        <h3 class="resume-item-title" itemprop="publicationTitle">Learning Numeracy: Binary Arithmetic with Neural Turing Machines</h3>
+                        <h4 class="resume-item-details" itemprop="info">Main author</h4>
+                        <p class="resume-item-copy" itemprop="versions">• arXiv, 04 April 2019 <a href="https://arxiv.org/pdf/1904.02478.pdf" class="my-link">[pdf]</a> <a href="bibs/castellini2019ntm.bib" class="my-link" download>[.bib]</a></p>
+                        <p class="resume-item-copy" itemprop="abstract">One of the main problems encountered so far with recurrent neural networks is that they struggle to retain long-time information dependencies in their recurrent connections. Neural Turing Machines (NTMs) attempt to mitigate this issue by providing the neural network with an external portion of memory, in which information can be stored and manipulated later on. The whole mechanism is differentiable end-to-end, allowing the network to learn how to utilise this long-term memory via SGD. This allows NTMs to infer simple algorithms directly from data sequences. Nonetheless, the model can be hard to train due to a large number of parameters and interacting components and little related work is present. In this work we use a NTM to learn and generalise two arithmetical tasks: binary addition and multiplication. These tasks are two fundamental algorithmic examples in computer science, and are a lot more challenging than the previously explored ones, with which we aim to shed some light on the capabilities on this neural model.</p>
+                    </div>
+                    <div class="resume-item">
+                        <h3 class="resume-item-title" itemprop="publicationTitle">Fake Twitter followers detection by denoising autoencoder</h3>
+                        <h4 class="resume-item-details" itemprop="info">Main co-author with <a href="http://www.dmi.unipg.it/poggioni/" class="my-link">Valentina Poggioni</a> and Giulia Sorbi</h4>
+                        <p class="resume-item-copy" itemprop="versions">• Proceedings of the International Conference on Web Intelligence WI’17, 195-202, ACM, 2017 <a href="https://dl.acm.org/citation.cfm?id=3106489" class="my-link">[pdf]</a> <a href="bibs/castellini2017twitter.bib" class="my-link" download>[.bib]</a></p>
+                        <p class="resume-item-copy" itemprop="abstract">Gaining followers on the Twitter platform has become a rapid way to increase one’s credibility on this social network, that in the last few years has become a launch pad for new trends and to influence people opinions. So, many people have begun to buy fake followers on underground markets appositely created to sold them. Therefore, identifying fake followers profiles is useful to maintain the balance between real influential people on the network and people who simply exploited this mechanism. This work presents a model based on artificial neural networks able to detect fake Twitter profiles. In particular, a denoising autoencoder has been implemented as anomaly detector trained with a semi-supervised learning approach. The model has been tested on a benchmark already used in literature and results are presented.</p>
+                    </div>
+                    <div class="resume-item">
+                        <h3 class="resume-item-title" itemprop="publicationTitle">Krylov iterative methods for the geometric mean of two matrices times a vector</h3>
+                        <h4 class="resume-item-details" itemprop="info">Main author</h4>
+                        <p class="resume-item-copy" itemprop="versions">• Numerical Algorithms 74(2), 561-571, Springer US, 26 January 2017 <a href="http://link.springer.com/article/10.1007/s11075-016-0161-4" class="my-link">[buy]</a> <a href="https://arxiv.org/pdf/1903.01189.pdf" class="my-link">[pdf]</a> <a href="bibs/castellini2017krylov.bib" class="my-link" download>[.bib]</a></p>
+                        <p class="resume-item-copy" itemprop="abstract">In this work, we are presenting an efficient way to compute the geometric mean of two positive definite matrices times a vector. For this purpose, we are inspecting the application of methods based on Krylov spaces to compute the square root of a matrix. These methods, using only matrix-vector products, are capable of producing a good approximation of the result with a small computational cost.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="content-section">
+                <div id="teaching-container">
+                    <div class="resume-item">
+                        <h3 class="resume-item-title" itemprop="name">Academic Year 2020/21</h3>
+                        <ul>
+                            <li><h4 class="resume-item-details" itemprop="description">COMP532 Module Demonstrator (Machine Learning and BioInspired Optimization)</h4> • University of Liverpool - Department of Computer Science • January 2021 — May 2021 • Lecturer: <a href="https://cgi.csc.liv.ac.uk/~shanluo/" class="my-link">Dr. Shan Luo</a></li>
+                            <li><h4 class="resume-item-details" itemprop="description">COMP211 Module Demonstrator (Computer Networks)</h4> • University of Liverpool - Department of Computer Science • October 2020 — December 2020 • Lecturer: <a href="https://cgi.csc.liv.ac.uk/~gairing/" class="my-link">Dr. Martin Gairing</a></li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <h3 class="resume-item-title" itemprop="name">Academic Year 2019/20</h3>
+                        <ul>
+                            <li><h4 class="resume-item-details" itemprop="description">COMP532 Module Demonstrator (Machine Learning and BioInspired Optimization)</h4> • University of Liverpool - Department of Computer Science • January 2020 — May 2020 • Lecturer: <a href="https://cgi.csc.liv.ac.uk/~shanluo/" class="my-link">Dr. Shan Luo</a></li>
+                            <li><h4 class="resume-item-details" itemprop="description">COMP202 Module Demonstrator (Complexity of Algorithms)</h4> • University of Liverpool - Department of Computer Science • January 2020 — May 2020 • Lecturer: <a href="https://cgi.csc.liv.ac.uk/~piotr/" class="my-link">Prof. Piotr Krysta</a></li>
+                            <li><h4 class="resume-item-details" itemprop="description">COMP211 Module Demonstrator (Computer Networks)</h4> • University of Liverpool - Department of Computer Science • October 2019 — December 2019 • Lecturer: <a href="https://cgi.csc.liv.ac.uk/~gairing/" class="my-link">Dr. Martin Gairing</a></li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <h3 class="resume-item-title" itemprop="name">Academic Year 2018/19</h3>
+                        <ul>
+                            <li><h4 class="resume-item-details" itemprop="description">COMP532 Module Demonstrator (Machine Learning and BioInspired Optimization)</h4> • University of Liverpool - Department of Computer Science • January 2019 — May 2019 • Lecturer: <a href="https://cgi.csc.liv.ac.uk/~shanluo/" class="my-link">Dr. Shan Luo</a></li>
+                            <li><h4 class="resume-item-details" itemprop="description">COMP202 Module Demonstrator (Complexity of Algorithms)</h4> • University of Liverpool - Department of Computer Science • January 2019 — May 2019 • Lecturer: <a href="https://cgi.csc.liv.ac.uk/~piotr/" class="my-link">Prof. Piotr Krysta</a></li>
+                            <li><h4 class="resume-item-details" itemprop="description">COMP305 Module Demonstrator (BioComputation)</h4> • University of Liverpool - Department of Computer Science • October 2018 — December 2018 • Lecturer: <a href="https://cgi.csc.liv.ac.uk/~ivb/" class="my-link">Prof. Irina V. Biktasheva</a></li>
+                            <li><h4 class="resume-item-details" itemprop="description">COMP219 Module Demonstrator (Advanced Artificial Intelligence)</h4> • University of Liverpool - Department of Computer Science • October 2018 — December 2018 • Lecturer: <a href="https://cgi.csc.liv.ac.uk/~xiaowei/" class="my-link">Dr. Xiaowei Huang</a></li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <h3 class="resume-item-title" itemprop="name">Academic Year 2017/18</h3>
+                        <ul>
+                            <li><h4 class="resume-item-details" itemprop="description">COMP532 Module Demonstrator (Machine Learning and BioInspired Optimization)</h4> • University of Liverpool - Department of Computer Science • January 2018 — May 2018 • Lecturer: <a href="https://cgi.csc.liv.ac.uk/~shanluo/" class="my-link">Dr. Shan Luo</a></li>
+                            <li><h4 class="resume-item-details" itemprop="description">COMP202 Module Demonstrator (Complexity of Algorithms)</h4> • University of Liverpool - Department of Computer Science • January 2018 — May 2018 • Lecturer: <a href="https://cgi.csc.liv.ac.uk/~piotr/" class="my-link">Prof. Piotr Krysta</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="content-section">
+                <div id="contacts-container">
+                    <div class="resume-item">
+                        <h3 class="resume-item-title" itemprop="name">Mail</h3>
+                        <p class="resume-item-copy" itemprop="info">J [dot] Castellini [at] uea [dot] ac [dot] uk
+                        <br/>jacopo [dot] castellini [at] insa-lyon [dot] fr
+                        <br/>jacopo [dot] castellini [at] inria [dot] fr</p>
+                    </div>
+                    <div class="resume-item">
+                        <h3 class="resume-item-title" itemprop="name">Office</h3>
+                        <p class="resume-item-copy" itemprop="info">I am currently a member of the <a href="https://www.citi-lab.fr/" class="my-link">CITI Lab</a>
+                        <br/><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.3784417076354!2d4.870057076774441!3d45.78364551206743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eaa107d69bd7%3A0x87d3a8ac6ac291fd!2sCITI%20Laboratory!5e0!3m2!1sit!2sit!4v1688721152464!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <br/>Floor 1, Télécommunications INSA Lyon, 6 Avenue des Arts, 69100 Villeurbanne, France</p>
+                    </div>
+                    <div class="resume-item">
+                        <h3 class="resume-item-title" itemprop="name">Phone</h3>
+                        <p class="resume-item-copy" itemprop="info">I haven't got a French phone number yet, I'm sorry...</p>
+                    </div>
+                    <div class="resume-item">
+                        <h3 class="resume-item-title" itemprop="name">Social</h3>
+                        <p class="icon-links" itemprop="info">
+                            <a href="https://www.facebook.com/JapStone92" class="icon-link" itemprop="url">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve" width="28">
+                                    <path id="Facebook" fill="#D1CECC" d="M14,0C6.27,0,0,6.27,0,14s6.27,14,14,14s14-6.27,14-14S21.73,0,14,0z M20.99,20.22
+        c0,0.43-0.35,0.77-0.77,0.77h-3.56v-5.42h1.82l0.27-2.11h-2.09v-1.35c0-0.61,0.17-1.03,1.05-1.03l1.12,0V9.2
+        c-0.19-0.03-0.86-0.08-1.63-0.08c-1.61,0-2.71,0.98-2.71,2.79v1.56h-1.82v2.11h1.82v5.42h-6.7c-0.43,0-0.77-0.35-0.77-0.77V7.78
+        c0-0.43,0.35-0.77,0.77-0.77h12.44c0.43,0,0.77,0.35,0.77,0.77V20.22z"/>
+                                </svg>
+                            </a>
+                            <a href="https://it.linkedin.com/in/jacopo-castellini-5a714b128" class="icon-link" itemprop="url">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve" width="28">
+                                    <path id="LinkedIn" fill="#D1CECC" d="M18.82,15.09v3.61h-2.09v-3.37c0-0.85-0.3-1.42-1.06-1.42c-0.58,0-0.92,0.39-1.07,0.77
+        c-0.06,0.13-0.07,0.32-0.07,0.51v3.52h-2.09c0,0,0.03-5.71,0-6.3h2.09v0.89c0,0.01-0.01,0.01-0.01,0.02h0.01V13.3
+        c0.28-0.43,0.77-1.04,1.89-1.04C17.79,12.25,18.82,13.16,18.82,15.09z M9.18,18.7h2.09v-6.3H9.18V18.7z M10.24,9.36
+        c-0.72,0-1.19,0.47-1.19,1.09c0,0.61,0.45,1.09,1.16,1.09h0.01c0.73,0,1.18-0.48,1.18-1.09C11.39,9.84,10.95,9.36,10.24,9.36z
+        M28,14c0,7.73-6.27,14-14,14S0,21.73,0,14S6.27,0,14,0S28,6.27,28,14z M20.93,8.02c0-0.55-0.46-1-1.02-1H8.09
+        c-0.57,0-1.02,0.45-1.02,1v11.96c0,0.55,0.46,1,1.02,1h11.82c0.57,0,1.02-0.45,1.02-1V8.02z"/>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/opocaj92" class="icon-link" itemprop="url">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve" width="28">
+                                    <path id="GitHub" fill-rule="evenodd" clip-rule="evenodd" fill="#D1CECC" d="M14.01,0C6.27,0-0.01,6.28-0.01,14.02
+        c0,6.19,4.02,11.45,9.59,13.3c0.7,0.13,0.96-0.3,0.96-0.68c0-0.33-0.01-1.21-0.02-2.38c-3.9,0.85-4.72-1.88-4.72-1.88
+        c-0.64-1.62-1.56-2.05-1.56-2.05c-1.27-0.87,0.1-0.85,0.1-0.85c1.41,0.1,2.15,1.44,2.15,1.44c1.25,2.14,3.28,1.52,4.08,1.16
+        c0.13-0.91,0.49-1.52,0.89-1.87c-3.11-0.35-6.38-1.56-6.38-6.93c0-1.53,0.55-2.78,1.44-3.76C6.37,9.17,5.89,7.74,6.65,5.81
+        c0,0,1.18-0.38,3.85,1.44c1.12-0.31,2.32-0.47,3.51-0.47c1.19,0.01,2.39,0.16,3.51,0.47c2.68-1.81,3.85-1.44,3.85-1.44
+        c0.76,1.93,0.28,3.35,0.14,3.71c0.9,0.98,1.44,2.23,1.44,3.76c0,5.38-3.28,6.57-6.4,6.92c0.5,0.43,0.95,1.29,0.95,2.6
+        c0,1.87-0.02,3.39-0.02,3.84c0,0.37,0.25,0.81,0.96,0.67c5.56-1.86,9.58-7.11,9.58-13.3C28.03,6.28,21.75,0,14.01,0z"/>
+                                </svg>
+                            </a>
+                            <a href="https://bitbucket.org/%7B9659b6e4-7d28-471e-a652-c085f3f12dc1%7D/" class="icon-link" itemprop="url">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve" width="28">
+                                    <g transform="translate(0.000000,28.000000) scale(0.100000,-0.100000)" fill="#D1CECC" stroke="none">
+                                        <path id="BitBucket1" d="M46 247 c-15 -11 -16 -21 -9 -72 9 -69 29 -85 103 -85 74 0 94 16
+        103 85 7 51 6 61 -9 72 -24 17 -164 17 -188 0z m166 -13 c19 -12 -16 -24 -72
+        -24 -57 0 -99 14 -70 24 8 2 22 7 30 10 17 6 97 -1 112 -10z m-44 -85 c3 -28
+        -16 -43 -43 -33 -15 6 -21 45 -8 58 16 16 48 1 51 -25z"/>
+                                        <path id="BitBucket1" d="M125 151 c-7 -12 12 -24 25 -16 11 7 4 25 -10 25 -5 0 -11 -4 -15 -9z"/>
+                                        <path id="BitBucket1" d="M65 60 c9 -33 21 -40 75 -40 54 0 66 7 72 40 4 25 4 25 -74 25 l-79 0 6 -25z"/>
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="https://scholar.google.co.uk/citations?user=SGOxkrAAAAAJ&hl=en" class="icon-link" itemprop="url">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve" width="28">
+                                    <g transform="translate(0.000000,28.000000) scale(0.100000,-0.100000)" fill="#D1CECC" stroke="none">
+                                        <path id="Scholar1" d="M81 263 c-124 -65 -93 -242 45 -259 73 -9 141 46 150 122 13 104
+        -103 186 -195 137z m138 -78 c2 -54 -16 -61 -21 -7 -3 30 -5 33 -12 17 -4 -11
+        -12 -28 -17 -38 -8 -14 -6 -24 5 -36 34 -37 9 -74 -46 -69 -42 4 -52 40 -16
+        59 13 6 24 13 26 14 7 6 -50 55 -64 55 -10 0 -6 8 13 25 22 19 39 24 79 25
+        l50 0 3 -45z"/>
+                                        <path id="Scholar2" d="M124 195 c-8 -21 3 -45 20 -45 22 0 28 17 16 40 -13 24 -28 26 -36 5z"/>
+                                        <path id="Scholar3" d="M114 95 c-8 -21 4 -35 31 -35 29 0 41 16 25 35 -16 19 -49 19 -56 0z"/>
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="https://dblp.uni-trier.de/pers/hd/c/Castellini:Jacopo" class="icon-link" itemprop="url">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve" width="28">
+                                    <g transform="translate(0.000000,28.000000) scale(0.100000,-0.100000)" fill="#D1CECC" stroke="none">
+                                        <path id="DBLP" d="M45 235 c12 -38 12 -46 0 -53 -12 -6 -12 -15 0 -61 7 -29 16 -55 18
+        -58 7 -6 90 37 99 51 4 6 8 7 8 2 0 -5 -7 -17 -14 -25 -8 -9 -12 -21 -8 -27 7
+        -11 87 -64 96 -64 2 0 -2 20 -9 45 -12 38 -12 46 0 53 12 6 12 15 0 61 -7 29
+        -16 55 -18 58 -3 2 -19 -3 -37 -12 -27 -14 -31 -20 -26 -48 3 -18 -2 -9 -10
+        19 -13 42 -23 55 -60 77 -25 15 -46 27 -48 27 -2 0 2 -20 9 -45z"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
