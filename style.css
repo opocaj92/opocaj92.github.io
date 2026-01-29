@@ -1,195 +1,136 @@
-html {
-    background: #fff;
-    font-family: sans-serif;
-    text-size-adjust: 100%;
+* {
+    font-family: "Lora", "Minion Pro", "Palatino", "Georgia", "sans-serif";
+    box-sizing: border-box;
 }
+
 body {
-    font-family: "Lora", "Minion Pro", Palatino, Georgia, serif;
-    color: #333;
-    font-size: 16px;
-    line-height: 1.5;
     margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #333;
 }
-header, section {
-    display: block;
-}
+
 a {
     background-color: transparent;
     text-decoration: none;
 }
-a:active, a:hover {
-    outline: 0;
-}
-h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-}
-img {
-    border: 0;
-}
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.wrapper:before, .wrapper:after {
-    content: "";
-    display: table;
-}
-.wrapper:after {
-    clear: both;
-}
+
 .wrapper {
-    max-width: 728px;
-    padding: 0 24px;
+    max-width: 60rem;
+    margin: 1.5rem auto;
+    padding: 0 2rem;
+}
+
+#avatar {
+    display: block;
     margin: 0 auto;
-    zoom: 1;
+    width: 6rem;
+    max-width: 100%;
+    border-radius: 50%;
+    pointer-events: none;
 }
-::-moz-selection {
-    background: rgba(51, 51, 51, 0.8);
-    color: #fff;
-    text-shadow: none;
-}
-::selection {
-    background: rgba(51, 51, 51, 0.8);
-    color: #fff;
-    text-shadow: none;
-}
-nav {
-    width: 100%;
-    border-top: 4px solid #c7c7c7;
-    border-bottom: 2px solid #c7c7c7;
-}
-.section-header {
-    padding: .2rem 0 .4rem;
-    margin-bottom: .5rem;
-    display: inline-block;
+
+#title {
+    margin: 1rem 0 2rem;
     text-align: center;
-    width: 24.5%;
-}
-.section-header h2 {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    font-size: 3rem;
     font-weight: 900;
-    font-size: 1.55rem;
-    letter-spacing: -.05rem;
-    margin: 0;
+    letter-spacing: -.15rem;
+    line-height: 1;
 }
+
+#description {
+    margin-bottom: 1rem;
+    padding: .4rem 0 .9rem;
+    border-top: .25rem solid #c7c7c7;
+    border-bottom: .125rem solid #c7c7c7;
+    text-align: center;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    font-size: 1.75rem;
+    font-weight: 300;
+    letter-spacing: -.05rem;
+    line-height: 2rem;
+}
+
+nav {
+    margin: 1.5rem 0 3rem;
+    width: 100%;
+    border-top: .25rem solid #c7c7c7;
+    border-bottom: .125rem solid #c7c7c7;
+}
+
+.menu-item {
+    display: inline-block;
+    margin-bottom: .5rem;
+    padding: .2rem 0 .4rem;
+    width: 24.5%;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    font-size: 1.55rem;
+    font-weight: 900;
+    letter-spacing: -.05rem;
+}
+
 @media(max-width: 600px) {
-    .section-header {
-        margin-bottom: 0;
+    .menu-item {
         display: block;
+        margin-bottom: 0;
         width: 100%;
     }
 }
-.page-header {
-    padding: 1.5rem 0;
-}
-.page-header .avatar {
-    width: 95px;
-    max-width: 100%;
-    overflow: hidden;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    border-radius: 100px;
-    margin: 0 auto;
+
+#education-container {
     display: block;
 }
-.page-header .header-name {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 3rem;
-    font-weight: 900;
-    text-align: center;
-    letter-spacing: -.15rem;
-    line-height: 1;
-    margin: 1rem 0 2rem;
+
+#publications-container, #teaching-container, #contacts-container {
+    display: none;
 }
-.page-header .title-bar {
-    border-top: 4px solid #c7c7c7;
-    border-bottom: 2px solid #c7c7c7;
-    text-align: center;
-    padding: .2rem 0 .4rem;
-    padding: .4rem 0;
-}
-.page-header .title-bar:before {
-    display: table;
-    content: "";
-}
-.page-header .title-bar:after {
-    display: table;
-    clear: both;
-    content: "";
-}
-.page-header .title-bar .header-title {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    font-size: 1.75rem;
-    line-height: 2rem;
-    letter-spacing: -.05rem;
-    text-align: center;
-    margin: 0 0 .5rem;
-}
-@media(min-width: 600px) {
-    .page-header .title-bar .header-title {
-        margin: 0;
-    }
-    .page-header .executive-summary {
-        font-size: 1.125rem;
-    }
-}
-.content-section {
-    margin: 3rem 0 0;
-}
-.content-section .resume-item {
-    margin-bottom: 1rem;
-}
-.content-section .resume-item-title {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    margin: 0 0 .75rem;
+
+.item-title {
+    margin-bottom: .75rem;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
     font-size: 1.5rem;
+    font-weight: 700;
     letter-spacing: -.05rem;
     line-height: 1;
 }
-.content-section .resume-item-details {
-    font-size: 1.125rem;
-    margin: 0 0 .75rem;
-    line-height: 1;
+
+.item-description {
     display: inline;
+    margin-bottom: .75rem;
+    font-weight: 700;
+    line-height: 1;
 }
-.content-section .resume-item-title a {
-    color: #333;
-    text-decoration: none;
-    border-bottom: 1px solid;
+
+.item-text {
+    margin: .75rem 0 1rem;
 }
-.content-section .resume-item-title a:hover {
-    border-bottom: none;
-    color: #9c9c9c;
-}
-.content-section .resume-item-copy {
-    margin: .75rem 0 0;
-}
+
 .my-link {
     font-weight: bold;
     color: #333;
 }
-#education-container {
-    display: block;
-}
-#publications-container, #teaching-container, #contacts-container {
-    display: none;
-}
+
 iframe {
+    width: 700px;
     height: 300px;
-    width: 400px;
-    margin: 1.5rem;
     border: 0;
 }
-.icon-links .icon-link {
-    margin-right: 15px;
+
+@media(max-width: 600px) {
+    iframe {
+        width: 100%;
+    }
 }
+
+.icon-links .icon-link {
+    margin-right: 1rem;
+}
+
 .icon-links .icon-link:hover .icon path {
     fill: #333;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
 }
