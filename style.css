@@ -115,15 +115,8 @@ nav {
 }
 
 iframe {
-    width: 700px;
-    height: 300px;
+    width: 100%;
     border: 0;
-}
-
-@media(max-width: 600px) {
-    iframe {
-        width: 100%;
-    }
 }
 
 .icon-links .icon-link {
