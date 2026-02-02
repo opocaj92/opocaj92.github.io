@@ -119,11 +119,11 @@ iframe {
     border: 0;
 }
 
-.icon-links .icon-link {
+.icon-link {
     margin-right: 1rem;
 }
 
-.icon-links .icon-link:hover .icon path {
+.icon-link:hover svg path {
     fill: #333;
     transition: all 0.3s ease;
 }
