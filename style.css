@@ -89,6 +89,10 @@ nav {
     display: none;
 }
 
+.resume-item {
+   margin-bottom: 2rem;
+}
+
 .item-title {
     margin-bottom: .75rem;
     font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
