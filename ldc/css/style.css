@@ -246,7 +246,7 @@ svg {
     }
     
     .avatar {
-        width: 40%;
+        width: 45%;
     }
 
     #bio {
@@ -255,7 +255,7 @@ svg {
     }
 
     #recents {
-        margin: 0 2rem 0 2rem;
+        margin: 0 2rem 2rem 2rem;
     }
     
     .update {
