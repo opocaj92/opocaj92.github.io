@@ -24,9 +24,9 @@ a {
 #avatar {
     display: block;
     margin: 0 auto;
-    width: 6rem;
+    width: 10rem;
     max-width: 100%;
-    border-radius: 50%;
+    border-radius: 10%;
     pointer-events: none;
 }
 
