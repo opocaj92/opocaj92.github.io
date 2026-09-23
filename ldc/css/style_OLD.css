@@ -1,12 +1,6 @@
 * {
-    /* Keep the existing visual system intact while making sizing predictable. */
     font-family: "TodaySB-Medium", "Times New Roman";
     box-sizing: border-box;
-}
-
-*::before,
-*::after {
-    box-sizing: inherit;
 }
 
 body {
@@ -14,8 +8,6 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    line-height: 1.5;
 }
 
 #main-container {
@@ -86,15 +78,8 @@ a:hover {
     color: rgba(0,0,0,0.6);
 }
 
-a:focus-visible {
-    outline: 0.15rem solid currentColor;
-    outline-offset: 0.15rem;
-}
-
 img {
     pointer-events: none;
-    max-width: 100%;
-    height: auto;
 }
 
 footer {
@@ -113,10 +98,6 @@ footer {
     position: relative;
     display: grid;
     grid-template-rows: auto;
-}
-
-.columns > * {
-    min-width: 0;
 }
 
 #home-columns {
@@ -249,7 +230,6 @@ svg {
 }
 
 @media screen and (max-width: 600px) {
-    /* Keep the existing mobile layout, but prevent content from forcing horizontal overflow. */
     #main-container {
         left: 5%;
         width: 90%;
@@ -333,18 +313,5 @@ svg {
     .comic-name {
         margin-bottom: 1rem;
         font-size: 2rem;
-    }
-}
-
-
-/* Accessibility: preserve the design while respecting reduced-motion preferences. */
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        scroll-behavior: auto !important;
-        transition-duration: 0.01ms !important;
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
     }
 }
