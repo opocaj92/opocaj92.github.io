@@ -1,5 +1,4 @@
 * {
-    /* Keep the existing visual system intact while making sizing predictable. */
     font-family: "TodaySB-Medium", "Times New Roman";
     box-sizing: border-box;
 }
@@ -22,12 +21,13 @@ body {
     position: relative;
     left: 12.5%;
     width: 75%;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 #title {
-    margin: 1.5rem 0 1.5rem 0;
-    text-align: center;
+    margin: 0.5rem auto 0.5rem auto;
+    width: 20%;
+    min-width: 200px;
 }
 
 #title:hover {
@@ -35,15 +35,12 @@ body {
     filter: alpha(opacity=70); 
 }
 
-#logo {
-    width: 20%;
-    min-width: 300px;
-}
-
 #navbar {
     position: sticky;
-    top: 0;
-    padding-left: 5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0 5rem 0 5rem;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
@@ -51,24 +48,20 @@ body {
     border-top: 0.15rem solid rgba(0,0,0,0.6);
     border-bottom: 0.15rem solid rgba(0,0,0,0.6);
     z-index: 999;
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
 }
 
 #navbar a {
     display: block;
     flex: 0 0 auto;
+    white-space: nowrap;
     padding: 0.8rem 1rem 0.8rem 1rem;
     text-align: center;
     font-weight: bold;
-    white-space: nowrap;
 }
 
 #navbar .vertical {
     flex: 0 0 auto;
     height: 1rem;
-    margin-top: 0;
     border-right: 0.05rem solid #bbb;
 }
 
@@ -120,15 +113,21 @@ footer {
 }
 
 #home-columns {
-    grid-template-columns: 60% 40%;
-    margin-top: 2rem;
+    grid-template-columns: 55% 45%;
+    margin-top: 1rem;
 }
 
 #bio {
-    margin: 0 2rem 2.5rem 2rem;
+    margin-right: 1rem;
     text-align: justify;
     text-justify: inter-word;
     clear: both;
+}
+
+.section-name {
+    color: rgba(0,0,0,0.8);
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 .avatar {
@@ -152,8 +151,8 @@ footer {
 }
 
 .update {
-    margin-top: 2rem;
-    padding-bottom: 2.5rem;
+    margin: 0 auto 1rem auto;
+    padding-bottom: 1rem;
     border-bottom: 0.15rem solid rgba(0,0,0,0.6);
     text-align: center;
 }
@@ -194,13 +193,13 @@ footer {
 }
 
 #all {
-    padding: 2rem 0 2rem 2rem;
+    margin: 2rem 0 2rem;
     clear: both;
 }
 
 .show {
     display: inline-block;
-    margin: 2rem 0.5rem;
+    margin: 1rem 0.5rem;
     width: 18%;
     text-align: center;
     vertical-align: top;
@@ -219,7 +218,7 @@ footer {
     grid-template-columns: 35% 65%;
 }
 
-.comic-name {
+#comic-name {
     color: rgba(0,0,0,0.8);
     font-size: 2.5rem;
     font-weight: bold;
@@ -227,16 +226,17 @@ footer {
 
 #comic-soundtrack {
     color: rgba(0,0,0,0.8);
+    font-size: 1.5rem;
     font-style: italic;
 }
 
-#comic-dates {
+.comic-dates {
     color: rgba(0,0,0,0.8);
     font-style: italic;
 }
 
 svg {
-    margin-left: 0.5rem;
+    margin: 0 1rem 0.5rem 0.5rem;
     vertical-align: middle;
 }
 
@@ -259,13 +259,8 @@ svg {
         display: flex;
     }
 
-    #logo {
-        width: 50%;
-        min-width: 0px;
-    }
-
     #navbar {
-        padding-left: 0;
+        padding: 0;
     }
 
     footer {
@@ -275,13 +270,17 @@ svg {
 
     #home-columns {
         flex-flow: column-reverse;
-        margin-top: 1rem;
     }
 
     #bio {
-        margin: 0.8rem 0;
+        margin: 0;
         padding-bottom: 1rem;
         border-bottom: 0.15rem solid rgba(0,0,0,0.6);
+    }
+
+    .section-name {
+        margin-bottom: 1rem;
+        font-size: 2rem;
     }
     
     .avatar {
@@ -295,9 +294,8 @@ svg {
 
     .update {
         display: block;
-        margin: 0 auto 1rem auto;
-        padding-bottom: 1rem;
         width: 80%;
+        max-width: 260px;
     }
     
     .update-cover {
@@ -309,7 +307,7 @@ svg {
     }
 
     #all {
-        padding: 0 0 1rem 0;
+        margin-top: 1rem;
     }
 
     .show {
@@ -328,11 +326,6 @@ svg {
 
     #comic-columns {
         flex-flow: column-reverse;
-    }
-
-    .comic-name {
-        margin-bottom: 1rem;
-        font-size: 2rem;
     }
 }
 
