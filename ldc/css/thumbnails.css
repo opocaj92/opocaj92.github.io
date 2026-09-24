@@ -10,10 +10,12 @@
     border: 0.1rem solid #bbb;
     border-radius: 0.3rem;
     transition: 0.3s ease;
+    cursor: pointer;
 }
 
 .myThumbs:hover {
     box-shadow: 0 0 0.2rem 0.1rem #bbb;
+    transform: scale(1.05);
     opacity: 0.8;
     filter: alpha(opacity=80);
 }
