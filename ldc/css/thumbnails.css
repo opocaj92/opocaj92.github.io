@@ -1,38 +1,7 @@
-#thumbnails-container {
-    margin: 0 1.5rem 0 1.5rem;
-}
-
-.myThumbs {
-    display: inline-block;
-    margin: 0.5rem;
-    padding: 0.2rem;
-    width: 28%;
-    border: 0.1rem solid #bbb;
-    border-radius: 0.3rem;
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-
-.myThumbs:hover {
-    box-shadow: 0 0 0.2rem 0.1rem #bbb;
-    transform: scale(1.05);
-    opacity: 0.8;
-    filter: alpha(opacity=80);
-}
-
-.myThumbs img {
-    width: 100%;
-}
-
-.numbering-caption {
-    width: 100%;
-    font-size: 0.8rem;
-    color: rgba(0,0,0,0.6);
-    text-align: center;
-}
-
-@media screen and (max-width: 600px) {
-    .myThumbs {
-        width: 25%;
-    }
-}
+#thumbnails-container { margin: 0 1.5rem; display: flex; flex-wrap: wrap; align-content: flex-start; gap: .75rem; }
+.thumb-button { display: block; padding: .2rem; width: calc(33.333% - .5rem); border: .1rem solid #bbb; border-radius: .3rem; background: white; transition: .2s ease; cursor: pointer; font: inherit; }
+.thumb-button:hover, .thumb-button:focus-visible { box-shadow: 0 0 .2rem .1rem #bbb; transform: translateY(-2px); }
+.thumb-button.active-thumb { border-color: rgba(0,0,0,.75); box-shadow: 0 0 0 .12rem rgba(0,0,0,.18); }
+.myThumbs img { display:block; width:100%; }
+.numbering-caption { width:100%; padding:.15rem 0; font-size:.8rem; color:rgba(0,0,0,.6); text-align:center; }
+@media screen and (max-width:600px) { #thumbnails-container { margin: 0; justify-content:center; } .thumb-button { width: calc(33.333% - .75rem); max-width: 130px; } }
