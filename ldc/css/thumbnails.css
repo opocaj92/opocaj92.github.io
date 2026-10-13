@@ -29,22 +29,22 @@
 }
 
 .myThumbs img {
-  display:block;
-  width:100%;
+  display: block;
+  width: 100%;
 }
 
 .numbering-caption {
-  width:100%;
-  padding:.15rem 0;
-  font-size:.8rem;
-  color:rgba(0,0,0,.6);
-  text-align:center;
+  width: 100%;
+  padding: .15rem 0;
+  font-size: .8rem;
+  color: rgba(0,0,0,.6);
+  text-align: center;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   #thumbnails-container {
     margin: 0;
-    justify-content:center;
+    justify-content: center;
   }
 
   .thumb-button {

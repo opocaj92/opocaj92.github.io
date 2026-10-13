@@ -93,7 +93,7 @@
   transform: scale(1.15);
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   #slideshow-container {
     width: 100%;
     margin-bottom: 2.5rem;
