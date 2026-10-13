@@ -4,7 +4,9 @@ const landing = document.getElementById('recent-container');
 
 function showLanding() {
   tabs.forEach(tab => tab.setAttribute('aria-selected', 'false'));
-  panels.forEach(panel => { panel.hidden = true; });
+  panels.forEach(panel => {
+    panel.hidden = true;
+  });
   if (landing) landing.hidden = false;
 }
 
@@ -12,10 +14,11 @@ function activateTab(name, updateHash = true) {
   const tab = document.querySelector(`[data-section="${name}"]`);
   const panel = document.getElementById(`${name}-container`);
   if (!tab || !panel) return;
-
   if (landing) landing.hidden = true;
   tabs.forEach(item => item.setAttribute('aria-selected', String(item === tab)));
-  panels.forEach(item => { item.hidden = item !== panel; });
+  panels.forEach(item => {
+    item.hidden = item !== panel;
+  });
   if (updateHash) history.replaceState(null, '', `#${name}`);
 }
 
